@@ -1,0 +1,10 @@
+package littleFarmStore;
+
+public abstract class Person {
+
+	String name;
+	String phoneNum;
+	int cashInBank;
+	
+	
+}
