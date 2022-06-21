@@ -1,0 +1,16 @@
+package littleFarmStore;
+
+public class employee extends Person {
+	
+	int employeeID;
+	int hourlyRate;
+	
+	
+	protected void doWork(int hrsWorked) {
+		
+		int newCash = cashInBank + (hrsWorked * hourlyRate);
+		System.out.println("You now have "+ newCash + " dollars in your account.");
+	}
+	
+	
+}
