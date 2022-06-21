@@ -1,0 +1,68 @@
+package littleFarmStore;
+
+import java.util.ArrayList;
+
+
+public class Store1 implements storefront {
+
+	String name = "Houston Little Farm Store";
+	double cash = cashAtStart;
+	int numOfEmployees = 5;
+	ArrayList<String> employees = new ArrayList<String>();
+	
+	
+	@Override
+	public void advertise() {
+		double newCash = cashAtStart - 100;
+		System.out.println("Just bought an internet ad for $100.");
+		System.out.println(name + " now has " + newCash + " dollars in its account.");
+		
+
+	}
+
+	@Override
+	public void hire() {
+		numOfEmployees++;
+
+	}
+	
+	
+	public void hire(String empName) {
+		numOfEmployees++;
+		employees.add(empName);
+	}
+   
+	@Override
+	public void sell() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void order() {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	public static void main(String[] args) {
+		
+		/*employee worker1 = new employee();
+		
+		worker1.hourlyRate = 12;
+		worker1.doWork(5);*/
+		
+		
+		Customer customer = new Customer();
+		customer.addToCart("Apples", 5);
+		customer.addToCart("bananas", 3);
+		customer.addToCart("Beef" , 4);
+		customer.printCart();
+		customer.finalizePurchase();
+		customer.printCart();
+		System.out.println("Enjoy your products: " + customer.owned);
+	}
+	
+	
+	
+}
