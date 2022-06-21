@@ -1,0 +1,16 @@
+package littleFarmStore;
+
+interface storefront {
+	String name = "Little Farm Store";
+	String[] productTypes = {"Fruit", "Veggie", "Meat", "Grains", "Misc"};
+	int maxNumEmployees = 10;
+	double cashAtStart = 15000;
+	
+	public void advertise();
+	public void hire();
+	public void sell();
+	public void order();
+	
+	
+	
+	}
