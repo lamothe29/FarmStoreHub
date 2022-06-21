@@ -1,0 +1,14 @@
+package littleFarmStore;
+
+public class Inventory {
+
+	String product;
+	int price;
+	
+	String productCode = "1: apple, 2: banana, 3:Ground beef";
+	
+	double[] productCodeArray = {1,2 ,3};
+	
+	double[][] menu = {{1 , .75} , {2, .45}, {3, 4.5}};
+	
+}
