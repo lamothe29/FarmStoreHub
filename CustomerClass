@@ -1,0 +1,50 @@
+package littleFarmStore;
+import java.util.ArrayList;
+
+public class Customer extends Person{
+
+	int customerID;
+	ArrayList<String> cart = new ArrayList<String>();
+	ArrayList<String> owned = new ArrayList<String>();
+	
+	
+	
+	
+	
+	
+	
+
+	public ArrayList<String> addToCart(String item, int quantity){
+		
+		for (int i = 0; i < quantity; i++) {
+			
+		cart.add(item);
+		}return cart;
+		
+	}
+		
+	public void printCart() {
+		System.out.println("Your cart includes: " + cart);
+	}
+	
+	protected void finalizePurchase() {
+	
+		
+			for (String item : cart) {
+				owned.add(item);
+			}
+		
+		
+			for (int i = 0; i < cart.size(); i++) {
+				
+				cart.remove(i);
+				i--;
+				}
+		
+		
+		
+		
+}
+
+
+}
